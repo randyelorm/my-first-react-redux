@@ -184,7 +184,10 @@ export default connect(null, mapDispatchToProps) (ExamsForm);
 
 //     const handleSubmit = (event)=> {
 //         event.preventDefault()
-//         addGrade(formState)
+//         addTheGrade(formState)
+
+      
+       
         
        
 //         setformState({

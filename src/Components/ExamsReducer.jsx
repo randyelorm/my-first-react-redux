@@ -10,7 +10,10 @@ const ExamsReducer = (state = initialState, action) => {
         case "ADD_GRADE":
             // get more explanation here:
            
-            return {...state.exams_grading, exams_grading:[...state.exams_grading, action.payload]}
+            return {...state, exams_grading: [...state.exams_grading, action.payload]}
+// We don't want to mutate the state (change the value in the state).
+// We return a new object that has to be up to date with the old one we are copying from.
+// we then update the new object with the old one. 
            
 
         case "DELETE_GRADE":
