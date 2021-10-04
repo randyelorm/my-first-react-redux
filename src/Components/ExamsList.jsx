@@ -31,3 +31,7 @@ const mapStateToProps=(state)=> {
 
 export default connect(mapStateToProps)(ExamsList);
 
+// mapStateToProps reads from our firestore.
+// So in this case, we are no longer reading from our react-redux-store.
+// so the id that is generated no longer comes from us but from the one 
+// firebase adds when we add a new user. 

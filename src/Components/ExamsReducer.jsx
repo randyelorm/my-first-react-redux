@@ -14,6 +14,9 @@ const ExamsReducer = (state = initialState, action) => {
 // We don't want to mutate the state (change the value in the state).
 // We return a new object that has to be up to date with the old one we are copying from.
 // we then update the new object with the old one. 
+
+        case "GET_GRADES":
+        return {...state, exams_grading : action.payload}
            
 
         case "DELETE_GRADE":
@@ -53,4 +56,3 @@ export default ExamsReducer;
 
 
 
-// How does the action connect to the reducer?

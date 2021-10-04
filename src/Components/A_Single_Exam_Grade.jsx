@@ -18,6 +18,12 @@ const A_Single_Exam_Grade = ({each_grade, deleteTheGrade}) => {
     deleteTheGrade(each_grade.id)
     
      }
+// each_grade is being read from our redux store which is being supplied data from our firestore database.
+// this means the id is coming from our firestore when a new user is added.
+// is what becomes each_grade.id now and not the one we generated
+// so each_grade.id = id from firestore. 
+
+
 
      
 

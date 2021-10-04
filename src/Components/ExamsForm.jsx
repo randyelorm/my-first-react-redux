@@ -8,6 +8,7 @@ import {connect} from "react-redux"
 import { addGrade } from "./Actions"
 import  { Component } from "react";
 import  { useState } from "react";
+import { getAllgrades } from "./Actions"
 
 
 
@@ -44,6 +45,10 @@ class ExamsForm extends Component {
         score: "",
         grade: ""
        })
+   }
+
+   componentDidMount() {
+     this.props.getAllgrades()
    }
 
 
@@ -146,8 +151,18 @@ class ExamsForm extends Component {
 }
 
 const mapDispatchToProps = {
-    addNewGrade: addGrade
+    addNewGrade: addGrade,
+    getAllgrades: getAllgrades
+
 }
+
+// Why do we pass getAllgrades to mapDispatch to props if we are just reading and not making 
+// chages to our store?
+// Ans: We are actuallu making changes to our store. Because we are getting information from
+// our firestore database which we get immidiately our form is mounted.
+// Once the form is mounted, we pass all the information from our database to 
+// our store with mapDispatch state to props.
+// we passing information from our firestore  to our redux store is we updating it.
 
 export default connect(null, mapDispatchToProps) (ExamsForm);
 

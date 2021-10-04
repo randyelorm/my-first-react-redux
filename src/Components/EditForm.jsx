@@ -25,6 +25,7 @@ class EditForm extends Component {
             grade: this.props.each_grade.grade,
             id: this.props.each_grade.id,
             disabled: true
+          
             
         }
     }
@@ -39,7 +40,7 @@ class EditForm extends Component {
 
       handleSubmit = (event)=> {
        event.preventDefault() 
-       this.props.EditNewGrade(this.state.id, this.state)
+       this.props.EditNewGrade(this.state)
 
        this.setState({
         name: "",
