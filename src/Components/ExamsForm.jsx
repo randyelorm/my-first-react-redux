@@ -73,6 +73,7 @@ class ExamsForm extends Component {
         name = "name"
         value = {this.state.name}
         onChange = {this.handleChange}
+        required = "required"
       />
      </Col>
 
@@ -88,6 +89,7 @@ class ExamsForm extends Component {
         name = "level"
         value = {this.state.level}
         onChange = {this.handleChange}
+        required = "required"
       />
     </Col>
 
@@ -102,6 +104,7 @@ class ExamsForm extends Component {
         name = "subject"
         value = {this.state.subject}
         onChange = {this.handleChange}
+        required = "required"
       />
     </Col>
 
@@ -117,6 +120,7 @@ class ExamsForm extends Component {
         name = "score"
         value = {this.state.score}
         onChange = {this.handleChange}
+        required = "required"
       />
     </Col>
 
@@ -131,6 +135,7 @@ class ExamsForm extends Component {
         name = "grade"
         value = {this.state.grade}
         onChange = {this.handleChange}
+        required = "required"
       />
     </Col>
    
