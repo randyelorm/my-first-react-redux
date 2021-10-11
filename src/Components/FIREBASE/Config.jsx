@@ -2,16 +2,21 @@
 import firebase from "firebase"
 
 
+
 const firebaseConfig = {
-  apiKey: "AIzaSyC5bUzJYd7-YFIno78YETdCXZBSKWxcVf8",
-  authDomain: "randy-s-react-projects.firebaseapp.com",
-  projectId: "randy-s-react-projects",
-  storageBucket: "randy-s-react-projects.appspot.com",
-  messagingSenderId: "169851039283",
-  appId: "1:169851039283:web:90af1c2c74c47c62327d46",
-  measurementId: "G-2ZJJCDKW9X"
+  apiKey: "AIzaSyBHW9TuafEkJfkarIPuPlevNycQh5IJy7s",
+  authDomain: "react-projects-hub-two.firebaseapp.com",
+  projectId: "react-projects-hub-two",
+  storageBucket: "react-projects-hub-two.appspot.com",
+  messagingSenderId: "164979243395",
+  appId: "1:164979243395:web:ca202821b85a6dd2c59eb6",
+  measurementId: "G-8VWK4BKR66"
 };
 
  firebase.initializeApp(firebaseConfig);
 
 export default firebase
+
+
+
+
