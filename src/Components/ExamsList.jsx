@@ -24,7 +24,7 @@ const ExamsList = ({exams_grading}) => {
 
 const mapStateToProps=(state)=> {
     return {
-        exams_grading: state.exams_grading
+        exams_grading: state.ExamsLocalReducer.exams_grading
     }
 }
 

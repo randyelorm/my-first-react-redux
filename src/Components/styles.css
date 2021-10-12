@@ -14,6 +14,16 @@
     
 }
 
+.form-heading {
+    font-size: 1.3rem;
+   
+}
+
+.logout-btn{
+ font-size: 1rem !important;
+ font-weight: bold;
+}
+
 .card {
     
     margin: 1rem !important;
@@ -34,3 +44,21 @@
     border:2px solid black;
 }
 
+
+.logout-btn {
+    float:right;
+   
+}
+
+
+
+@media only screen and (min-width:768px) { 
+    .form-heading {
+        font-size: 2rem;
+    }
+    
+    .logout-btn{
+     font-size: 1rem !important;
+     font-weight: bold;
+    }
+}

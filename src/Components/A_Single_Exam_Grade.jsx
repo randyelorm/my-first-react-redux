@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
-import { deleteGrade  } from "./Actions"
+import { deleteGrade  } from "./ACTIONS/Actions"
 import {connect} from "react-redux"
 import Modal from 'react-bootstrap/Modal';
 import EditForm from './EditForm';

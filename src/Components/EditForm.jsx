@@ -4,10 +4,10 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import "./styles.css"
 import {connect} from "react-redux"
-import { addGrade } from "./Actions"
+import { addGrade } from "./ACTIONS/Actions"
 import  { Component } from "react";
 import  { useState } from "react";
-import {editGrade} from "./Actions"
+import {editGrade} from "./ACTIONS/Actions"
 
 
 

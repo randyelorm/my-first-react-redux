@@ -5,10 +5,10 @@ import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import "./styles.css"
 import {connect} from "react-redux"
-import { addGrade } from "./Actions"
+import { addGrade } from "./ACTIONS/Actions"
 import  { Component } from "react";
-import  { useState } from "react";
-import { getAllgrades } from "./Actions"
+import { getAllgrades } from "./ACTIONS/Actions"
+import {SignOut} from "./ACTIONS/authActions"
 
 
 
@@ -58,7 +58,10 @@ class ExamsForm extends Component {
         return (
             <div>
             <br/>
-    <h2 className = "text-center">STUDENTS GRADING SYSTEM WEB APP</h2>
+        <Button variant ="secondary"  className="m-2 logout-btn" onClick = {this.props.SignOut} >
+          Logout <i class="fas fa-reply"></i>
+       </Button>
+    <h2 className = "text-center form-heading">STUDENTS GRADING SYSTEM WEB APP</h2>
 
   <Form className = "form" onSubmit = {this.handleSubmit}>
    <Row className="align-items-center">
@@ -157,7 +160,8 @@ class ExamsForm extends Component {
 
 const mapDispatchToProps = {
     addNewGrade: addGrade,
-    getAllgrades: getAllgrades
+    getAllgrades: getAllgrades,
+    SignOut:SignOut
 
 }
 
