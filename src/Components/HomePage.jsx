@@ -5,9 +5,9 @@ import ExamsList from './ExamsList';
 const Homepage = () => {
     return (
         <div>
-            <ExamsForm/>
-            <ExamsList/>
-            
+            <ExamsForm />
+            {/* <ExamsList/> */}
+
         </div>
     );
 }
