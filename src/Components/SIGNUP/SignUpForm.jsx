@@ -26,7 +26,7 @@ const Signupform = (props) => {
         <div className="SignUp-Container">
             <Form className="log-in-form" onSubmit={handleSubmit}>
 
-                <h2 className="signup-heading"> Papa Worlanyo's Self Development Platform. Please <span className="Sign_Up">Sign UP</span> </h2> <br />
+                <h2 className="signup-heading"> Papa Worlanyo's Self Development Platform. Please <span className="Sign_Up">Create Your Account</span> </h2> <br />
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label className="label-text">Email address</Form.Label>
                     <Form.Control

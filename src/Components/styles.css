@@ -1,10 +1,26 @@
+
+
+
 .form1 {
     
-    background-color: indianred;   
+    background-color: #F7E8ED !important;   
+    margin: 0rem 2rem 1rem 2rem !important;
+    border: 1px solid grey;
 }
 
+body {
+    background: url("../Images/bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;    
+    font-family: "Montserrat", sans-serif !important;
+}
+
+
+
 .form2 {
-    background-color:darksalmon;
+    background-color: #F7E8ED !important;   
+    margin: 0rem 2rem 2rem 2rem !important;
+    border: 1px solid grey;
 }
 
 .row1 {
@@ -29,14 +45,33 @@
 
 
 
-.heading{
+.main_heading{
     font-size: 1.3rem;
+    font-family: 'Roboto', sans-serif !important;
+    color: #0D6EFD;
    
 }
 
-.instructions {
-    text-decoration: underline;
+.assessment_heading {
+    font-size: 1rem;
+    padding:0rem 1rem;
 }
+
+.instructions {
+    font-size: 0.8rem;
+    text-decoration: underline;
+    font-family: 'Roboto', sans-serif !important;
+}
+
+.true {
+    color:tomato
+}
+
+.false {
+    color:green
+}
+
+
 
 .logout-btn{
  font-size: 1rem !important;
@@ -68,6 +103,7 @@
 .logout-btn {
     float:right;
    
+   
 }
 
 .submit_btnCol {
@@ -86,10 +122,36 @@
 
 @media only screen and (min-width:768px) { 
 
-    .heading{
+    .main_heading{
         font-size: 2.5rem;
        
     }
+
+    .instructions {
+        font-size: 1.5rem;
+        text-decoration: underline;
+        font-family: 'Roboto', sans-serif !important;
+    }
+    
+
+
+    .assessment_heading {
+        font-size: 1.7rem;
+        padding:0rem 1rem;
+    }
+
+    .form1 {
+    
+        background-color: indianred; 
+        margin: 0rem 5rem 3rem 5rem !important; 
+    }
+
+
+    .form2 {
+        background-color:darksalmon;
+        margin: 0rem 5rem 3rem 5rem !important; 
+    }
+    
     
     .logout-btn{
      font-size: 1rem !important;

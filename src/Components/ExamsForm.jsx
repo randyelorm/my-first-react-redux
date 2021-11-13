@@ -93,12 +93,14 @@ class ExamsForm extends Component {
     return (
       <div>
         <br />
-        <Button variant="secondary" className="m-2 logout-btn" onClick={this.props.SignOut} >
-          Logout <i class="fas fa-reply"></i>
-        </Button>
-        <h1 className="text-center heading">PAPA WORLA'S SELF DEVELOPMENT PLATFORM</h1> <br />
-        <h3 className="text-center ">ASSESSMENT FOR THE FIRST WEEK OF OUR COACHING AND MENTORING SESSION</h3> <br />
-        <h4 className="text-center instructions">PLEASE ANSWER EITHER TRUE OR FALSE</h4> <br />
+        <span className="heading-btn">
+          <Button variant="secondary" className="m-2 logout-btn" onClick={this.props.SignOut} >
+            Logout
+          </Button>
+        </span>
+        <h1 className="text-center main_heading">PAPA WORLA'S SELF DEVELOPMENT PLATFORM</h1> <br />
+        <h3 className="text-center assessment_heading ">ASSESSMENT FOR THE FIRST WEEK OF OUR COACHING AND MENTORING SESSION</h3> <br />
+        <h4 className="text-center instructions">PLEASE ANSWER EITHER <span className="true">TRUE</span> OR <span className="false">FALSE</span> </h4> <br />
 
 
         <Form className="form1" onSubmit={this.handleSubmit}>
@@ -451,7 +453,7 @@ class ExamsForm extends Component {
 
           <Col className="submit_btnCol">
             <Button type="submit" className="mt-4 submit_btn">
-              Submit
+              Submit All
             </Button>
           </Col>
         </Form>
