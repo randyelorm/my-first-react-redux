@@ -98,7 +98,7 @@ class ExamsForm extends Component {
             Logout
           </Button>
         </span>
-        <h1 className="text-center main_heading">PAPA WORLA'S SELF DEVELOPMENT PLATFORM</h1> <br />
+        <h1 className="text-center main_heading">PAPA WORLANYO'S SELF DEVELOPMENT PLATFORM</h1> <br />
         <h3 className="text-center assessment_heading ">ASSESSMENT FOR THE FIRST WEEK OF OUR COACHING AND MENTORING SESSION</h3> <br />
         <h4 className="text-center instructions">PLEASE ANSWER EITHER <span className="true">TRUE</span> OR <span className="false">FALSE</span> </h4> <br />
 
